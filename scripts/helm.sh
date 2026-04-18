@@ -10,7 +10,8 @@ fi
 echo "Deploying to $ENV..."
 
 helm upgrade --install my-app ./chart \
-  -f configs/deploy.hel.charts.yml \
+  -f configs/deploy.helm.charts.yml \
   --set environment=$ENV
+  --set backend.configMaps.LOG_LEVEL="${LOG_LEVEL}"
 
 echo "Done!"
