@@ -1,0 +1,16 @@
+environments:
+  predev:
+    env:
+      API_URL: "https://predev.api.com"
+
+  preprod:
+    env:
+      API_URL: "https://preprod.api.com"
+
+  sand:
+    env:
+      API_URL: "https://sand.api.com"
+
+  prod:
+    env:
+      API_URL: "https://prod.api.com"
