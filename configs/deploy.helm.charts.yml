@@ -2,15 +2,20 @@ environments:
   predev:
     env:
       API_URL: "https://predev.api.com"
+      value: "{{ .Values.backend.configMaps.LOG_LEVEL }}"
 
   preprod:
     env:
       API_URL: "https://preprod.api.com"
+      value: "{{ .Values.backend.configMaps.LOG_LEVEL }}"
 
   sand:
     env:
       API_URL: "https://sand.api.com"
+      value: "{{ .Values.backend.configMaps.LOG_LEVEL }}"
+
 
   prod:
     env:
       API_URL: "https://prod.api.com"
+      value: "{{ .Values.backend.configMaps.LOG_LEVEL }}"
